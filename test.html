@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+   /* var a="2016-11-11";
+    alert(addDate(a,6))
+    function addDate(date, moths) {
+        var d = new Date(date);
+        d.setMonth(d.getMonth() + moths);
+        var month = d.getMonth()+1;
+        var day = d.getDate();
+        if (month < 10) {
+            month = "0" + month;
+        }
+        if (day < 10) {
+            day = "0" + day;
+        }
+        var val = d.getFullYear() + "-" + month + "-" + day;
+        return val;
+    }*/
+
+/*   (function(d, e, f) {
+       console.log(arguments);
+       arguments[0]='china';
+       console.log(d);
+       e='s';
+       console.log(arguments);
+       var length=arguments.length;
+       console.log(length);
+       console.log(arguments.callee);
+   })('hello', 'world', '!','aa');*/
+
+/*   console.log((function(n){
+       if(1==n){
+           return 1;
+       }else{
+           return n+arguments.callee(n-1);
+       }
+   }(10)));*/
+
+
+</script>
+<form id="_form">
+    <input type="text" name="ip1" value="输入框1">
+    <input type="text" name="ip2" value="输入框2">
+    <input type="submit">
+    <select>
+
+    </select>
+</form>
+<script>
+    var _form=document.getElementById('_form');
+    for(var i=0;i<=_form.length;i++)
+    {
+       alert(_form[i].tagName)
+    }
+/*
+ _form.onsubmit=function () {
+        alert(this.ip1.value);
+    }*/
+</script>
+</body>
+</html>

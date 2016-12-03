@@ -1,0 +1,1 @@
+SELECT t.admin_id as admin_id,t.real_name as real_name,t.dp_id as dept_id,d.department FROM gt_admin AS t LEFT JOIN gt_department AS d ON d.dept_id=t.dp_id  WHERE t.dp_id IN ('14','16','17','15','18','19') ORDER BY t.add_time ASC LIMIT 0,20  
